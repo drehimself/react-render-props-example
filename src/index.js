@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import axios from "axios";
+axios.defaults.headers.common["user-key"] = "475473671063848d66cec342fe9d48b2";
+axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
